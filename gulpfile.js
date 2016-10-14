@@ -28,8 +28,8 @@ gulp.task('styles', () => {
 
 gulp.task('js', function () {
     return gulp.src('web/scripts/*.js')
-        .pipe(uglify())
         .pipe(rigger())
+        .pipe(uglify())
         .pipe(gulp.dest('public/scripts/'));
 });
 
