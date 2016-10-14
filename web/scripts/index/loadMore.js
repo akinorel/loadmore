@@ -31,7 +31,7 @@ var LoadMore = (function () {
         this.autoLoad = isAutoload;
 
         if (isAutoload) {
-            $(window).bind('mousewheel DOMMouseScroll', function (event) {
+            $(window).bind('scroll mousewheel DOMMouseScroll', function (event) {
                 if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
                     return;
                 }
@@ -45,7 +45,7 @@ var LoadMore = (function () {
             return;
         }
 
-        $(window).unbind('mousewheel DOMMouseScroll');
+        $(window).unbind('scroll mousewheel DOMMouseScroll');
     };
 
     return LoadMore;
