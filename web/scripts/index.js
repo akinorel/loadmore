@@ -1,0 +1,1 @@
+//= [index/articlesService.js, index/loadMore.js, index/index.js]

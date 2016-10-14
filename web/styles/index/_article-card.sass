@@ -1,0 +1,33 @@
+.article
+    background: #fff
+    padding: 20px 20px 30px
+    .article__img-wrapper
+        img
+            width: 100%
+    .article__rating
+        text-align: center
+        margin-top: 10px
+        font-size: 0
+        .article__rating-wrapp
+            display: inline-block
+            .rating__star
+                width: 11px
+                height: 10px
+                display: inline-block
+                background: url('../images/stars.png') no-repeat
+                background-position: -18px 0
+                cursor: pointer
+                float: right
+                &:hover
+                    background-position: -1px 0
+                    &~.rating__star
+                        background-position: -1px 0
+
+    .article__caption
+        text-align: center
+        margin-top: 14px
+    .article__text  
+        margin-top: 14px  
+        font-size: 11px
+        color: #999999
+        line-height: 1.4              

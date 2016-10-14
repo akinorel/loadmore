@@ -1,0 +1,21 @@
+<div class="article col-3">
+    <div class="article__img-wrapper">
+        <img src="<%=article.image%>" alt="">
+    </div>
+
+    <div class="article__rating">
+        <div class="article__rating-wrapp">
+            <% for (var i = 0; i < 5; i++) {%>
+            <i class="rating__star"></i>
+            <% } %>
+        </div>   
+    </div>
+
+    <div class="article__caption">
+        <p><%= article.title %></p>
+    </div>
+
+    <div class="article__text">
+        <p><%= article.paragraph %></p>
+    </div>
+</div>

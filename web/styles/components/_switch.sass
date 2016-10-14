@@ -1,0 +1,21 @@
+.switch
+    position: relative
+    width: 65px
+    height: 35px
+    background: #fff
+    border-radius: 15px
+    cursor: pointer
+    .switch__circle
+        background: #797979
+        height: 30px
+        width: 30px
+        border-radius: 50%
+        display: block
+        position: absolute
+        top: 3px
+        left: 4px
+        transition: all ease 0.3s
+    &.on
+        .switch__circle
+            background: #6dcb82
+            left: 32px

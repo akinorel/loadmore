@@ -1,0 +1,28 @@
+$betweenIndent: 50px;
+$maxWidth: 300px;
+
+.col-3
+    box-sizing: border-box
+    min-width: 190px
+    max-width: $maxWidth
+    float: left
+    width: calc(33.33% -  (2 * #{$betweenIndent} / 3)
+    &+.col-3
+        margin-left: $betweenIndent
+    +resp(tab)
+        width: calc(50% -  (#{$betweenIndent} / 2)
+        margin-bottom: $betweenIndent
+    +resp(pho)
+        width: 100%
+        margin-top: $betweenIndent
+        float: none
+        &+.col-3
+            margin-left: 0
+
+    &:last-child
+        +resp(tab)
+            width: 100%
+            max-width: (2 * $maxWidth) + $betweenIndent
+            margin: 0
+            float: none
+            clear: both
